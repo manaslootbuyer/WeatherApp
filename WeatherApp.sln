@@ -1,0 +1,68 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 25.0.1706.8
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1.0 Common", "1.0 Common", "{73316A54-D354-41E9-8834-0FA2A5F2CBC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2.0 Domain", "2.0 Domain", "{1DE3E3ED-F551-40A6-860D-DFD96ADFBED5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3.0 Business", "3.0 Business", "{C1933E0F-DC99-4F36-B72B-3B540EAC0B41}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5.0 UI", "5.0 UI", "{E3116149-1F90-42B3-BAD1-A30478906A70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.0 Core", "4.0 Core", "{A755C661-4E0C-4F23-A3D9-931F91B277D5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.UI", "Weather.UI\Weather.UI.csproj", "{7BB9D5D1-257B-4C8C-AB6F-089A5655A259}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp.Common", "WeatherApp.Common\WeatherApp.Common.csproj", "{0A810752-E67E-4531-85C8-174F33A0F040}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Domain", "Weather.Domain\Weather.Domain.csproj", "{6FFECA1A-A290-4FAD-9880-705B8E3FE4D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Services", "Weather.Services\Weather.Services.csproj", "{57A35498-B8C1-466F-AC1A-87499705D520}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6.0 Tests", "6.0 Tests", "{E66EF5DB-1432-40F2-B209-333E3BAE493E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Core", "Weather.Core\Weather.Core.csproj", "{896A25C6-2C98-41A7-A698-835C9149640F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7BB9D5D1-257B-4C8C-AB6F-089A5655A259}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7BB9D5D1-257B-4C8C-AB6F-089A5655A259}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7BB9D5D1-257B-4C8C-AB6F-089A5655A259}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7BB9D5D1-257B-4C8C-AB6F-089A5655A259}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A810752-E67E-4531-85C8-174F33A0F040}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A810752-E67E-4531-85C8-174F33A0F040}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A810752-E67E-4531-85C8-174F33A0F040}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A810752-E67E-4531-85C8-174F33A0F040}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6FFECA1A-A290-4FAD-9880-705B8E3FE4D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6FFECA1A-A290-4FAD-9880-705B8E3FE4D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6FFECA1A-A290-4FAD-9880-705B8E3FE4D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6FFECA1A-A290-4FAD-9880-705B8E3FE4D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57A35498-B8C1-466F-AC1A-87499705D520}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57A35498-B8C1-466F-AC1A-87499705D520}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57A35498-B8C1-466F-AC1A-87499705D520}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57A35498-B8C1-466F-AC1A-87499705D520}.Release|Any CPU.Build.0 = Release|Any CPU
+		{896A25C6-2C98-41A7-A698-835C9149640F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{896A25C6-2C98-41A7-A698-835C9149640F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{896A25C6-2C98-41A7-A698-835C9149640F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{896A25C6-2C98-41A7-A698-835C9149640F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3AA3468F-E0DF-489F-8C85-6A739173E3C3}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7BB9D5D1-257B-4C8C-AB6F-089A5655A259} = {E3116149-1F90-42B3-BAD1-A30478906A70}
+		{0A810752-E67E-4531-85C8-174F33A0F040} = {73316A54-D354-41E9-8834-0FA2A5F2CBC6}
+		{6FFECA1A-A290-4FAD-9880-705B8E3FE4D2} = {1DE3E3ED-F551-40A6-860D-DFD96ADFBED5}
+		{57A35498-B8C1-466F-AC1A-87499705D520} = {C1933E0F-DC99-4F36-B72B-3B540EAC0B41}
+		{896A25C6-2C98-41A7-A698-835C9149640F} = {A755C661-4E0C-4F23-A3D9-931F91B277D5}
+	EndGlobalSection
+EndGlobal
