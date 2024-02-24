@@ -1,12 +1,12 @@
 ﻿using Autofac;
 using CommunityToolkit.Maui.Views;
+using Weather.Common.Constant;
 using Weather.Core.DialogModels;
 using Weather.Core.Navigation;
 using Weather.Domain.Navigation;
 using Weather.Services;
 using Weather.UI.Dialogs;
 using Weather.UI.ViewModels;
-using WeatherApp.Common.Constant;
 
 namespace Weather.UI.Modules
 {

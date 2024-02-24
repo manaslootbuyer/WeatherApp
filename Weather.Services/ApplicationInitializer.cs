@@ -1,6 +1,6 @@
 ﻿using System;
+using Weather.Common.Constant;
 using Weather.Domain.Navigation;
-using WeatherApp.Common.Constant;
 
 namespace Weather.Services
 {

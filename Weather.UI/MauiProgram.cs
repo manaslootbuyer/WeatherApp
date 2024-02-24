@@ -15,9 +15,14 @@ public static class MauiProgram
             .UseMauiApp<App>()
 			.ConfigureFonts(fonts =>
 			{
-				fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
-				fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
-			}).ConfigureContainer(
+                fonts.AddFont("NunitoSans.ttf", "NunitoSans");
+                fonts.AddFont("NunitoSans-Regular.ttf", "NunitoSansRegular");
+                fonts.AddFont("NunitoSans-SemiBold.ttf", "NunitoSansSemiBold");
+                fonts.AddFont("NunitoSans-Bold.ttf", "NunitoSansBold");
+                fonts.AddFont("NunitoSans-ExtraBold.ttf", "NunitoSansExtraBold");
+                fonts.AddFont("fasolid.ttf", "FontAwesomeSolidFontFamily");
+                fonts.AddFont("faregular.ttf", "FontAwesomeRegularFontFamily");
+            }).ConfigureContainer(
                 new AutofacServiceProviderFactory(),
                 AutofacBootstrapper.RegisterAutofacModule); ;
 

@@ -2,13 +2,58 @@
 <views:MainPageXaml  xmlns:views="clr-namespace:Weather.UI"
                      xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
                      xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-                     x:Class="Weather.UI.MainPage">
+                     xmlns:controls="clr-namespace:Weather.UI.CustomControls"
+                     x:Class="Weather.UI.MainPage"
+                     BackgroundColor="{StaticResource Primary}">
 
-    <Grid>
-        <Label VerticalOptions="Center"
-               Text="Hello"/>
+    <ScrollView>
+        <VerticalStackLayout Padding="40"
+                             Spacing="30">
+            <controls:TitleLabel Text="Baguio City"/>
+            <controls:SubHeaderLabel Text="Sunday, 25 February 2024 05:00"
+                                     TextColor="{StaticResource Gray100}"/>
 
-    </Grid>
+            <Grid ColumnDefinitions="*,*"
+                  Margin="0,40,0,0">
+                 <Image Grid.Column="0"
+                        Source="icon_02d"
+                        HorizontalOptions="Start"
+                        VerticalOptions="Center"
+                        WidthRequest="120"
+                        HeightRequest="120"/>
 
+                  <VerticalStackLayout Grid.Column="1"
+                                       HorizontalOptions="EndAndExpand"
+                                       VerticalOptions="CenterAndExpand">
+                             <controls:TitleLabel HorizontalOptions="End"
+                                                  Text="23°c"
+                                                  FontSize="{StaticResource LargeFontSize}"/>
+
+                             <controls:DefaultLabel HorizontalOptions="End"
+                                                    Text="Feels like 27°c"/>
+
+                             <controls:DefaultLabel Text="Few clouds"
+                                                    HorizontalOptions="EndAndExpand"/>
+                </VerticalStackLayout>
+
+            </Grid>
+
+           <Frame HorizontalOptions="FillAndExpand"
+                  BackgroundColor="Black"
+                  Opacity="0.3"
+                  CornerRadius="25"
+                  HeightRequest="100">
+
+                 <Grid  RowDefinitions="Auto, Auto, Auto"
+                        ColumnDefinitions="*, *"
+                        HorizontalOptions="FillAndExpand">
+
+                 </Grid>
+
+           </Frame>
+
+     
+        </VerticalStackLayout>
+    </ScrollView>
 </views:MainPageXaml>
 

@@ -4,7 +4,7 @@ using System.Diagnostics.CodeAnalysis;
 using Weather.Domain.Navigation;
 using Weather.Domain.Navigation.Params;
 using CommunityToolkit.Maui.Views;
-using WeatherApp.Common.Constant;
+using Weather.Common.Constant;
 
 namespace Weather.Core.Navigation
 {

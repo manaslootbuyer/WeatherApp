@@ -1,5 +1,4 @@
-﻿using System;
-namespace WeatherApp.Common.Constant
+﻿namespace Weather.Common.Constant
 {
     public static class ViewNames
     {

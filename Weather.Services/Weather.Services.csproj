@@ -9,5 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\Weather.Domain\Weather.Domain.csproj" />
     <ProjectReference Include="..\WeatherApp.Common\WeatherApp.Common.csproj" />
+    <ProjectReference Include="..\WeatherApp.Common\Weather.Common.csproj" />
   </ItemGroup>
 </Project>

@@ -15,7 +15,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.0 Core", "4.0 Core", "{A7
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.UI", "Weather.UI\Weather.UI.csproj", "{7BB9D5D1-257B-4C8C-AB6F-089A5655A259}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherApp.Common", "WeatherApp.Common\WeatherApp.Common.csproj", "{0A810752-E67E-4531-85C8-174F33A0F040}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Common", "WeatherApp.Common\Weather.Common.csproj", "{0A810752-E67E-4531-85C8-174F33A0F040}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Weather.Domain", "Weather.Domain\Weather.Domain.csproj", "{6FFECA1A-A290-4FAD-9880-705B8E3FE4D2}"
 EndProject

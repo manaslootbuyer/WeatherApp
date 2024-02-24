@@ -8,8 +8,10 @@
 
   <ItemGroup>
     <None Remove="Constant\" />
+    <None Remove="Resources\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Constant\" />
+    <Folder Include="Resources\" />
   </ItemGroup>
 </Project>

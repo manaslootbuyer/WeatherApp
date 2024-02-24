@@ -41,6 +41,9 @@
 	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net8.0-ios|AnyCPU'">
 	  <CreatePackage>false</CreatePackage>
 	</PropertyGroup>
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Release|net8.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -53,9 +56,6 @@
 		<MauiImage Update="Resources\Images\dotnet_bot.png" Resize="True" BaseSize="300,185" />
 
 		<!-- Custom Fonts -->
-		<MauiFont Include="Resources\Fonts\*" />
-
-		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
 	</ItemGroup>
 
@@ -71,17 +71,112 @@
 	  <ProjectReference Include="..\Weather.Domain\Weather.Domain.csproj" />
 	  <ProjectReference Include="..\Weather.Services\Weather.Services.csproj" />
 	  <ProjectReference Include="..\Weather.Core\Weather.Core.csproj" />
+	  <ProjectReference Include="..\WeatherApp.Common\Weather.Common.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="ViewModels\" />
 	  <None Remove="Views\" />
 	  <None Remove="Dialogs\" />
 	  <None Remove="Modules\" />
+	  <None Remove="CustomControls\" />
+	  <None Remove="Resources\Fonts\" />
+	  <None Remove="Resources\Fonts\NunitoSans-SemiBold.ttf" />
+	  <None Remove="Resources\Fonts\fasolid.ttf" />
+	  <None Remove="Resources\Fonts\faregular.ttf" />
+	  <None Remove="Resources\Fonts\NunitoSans.ttf" />
+	  <None Remove="Resources\Fonts\NunitoSans-Regular.ttf" />
+	  <None Remove="Resources\Fonts\NunitoSans-ExtraBold.ttf" />
+	  <None Remove="Resources\Fonts\NunitoSans-Bold.ttf" />
+	  <None Remove="Resources\Images\icon_50n.png" />
+	  <None Remove="Resources\Images\icon_50d.png" />
+	  <None Remove="Resources\Images\icon_50d_n.png" />
+	  <None Remove="Resources\Images\icon_13n.png" />
+	  <None Remove="Resources\Images\icon_13n_n.png" />
+	  <None Remove="Resources\Images\icon_13d.png" />
+	  <None Remove="Resources\Images\icon_13d_n.png" />
+	  <None Remove="Resources\Images\icon_11n.png" />
+	  <None Remove="Resources\Images\icon_11n_n.png" />
+	  <None Remove="Resources\Images\icon_11d.png" />
+	  <None Remove="Resources\Images\icon_11d_n.png" />
+	  <None Remove="Resources\Images\icon_10n.png" />
+	  <None Remove="Resources\Images\icon_10n_n.png" />
+	  <None Remove="Resources\Images\icon_10d.png" />
+	  <None Remove="Resources\Images\icon_10d_n.png" />
+	  <None Remove="Resources\Images\icon_09n.png" />
+	  <None Remove="Resources\Images\icon_09n_n.png" />
+	  <None Remove="Resources\Images\icon_09d.png" />
+	  <None Remove="Resources\Images\icon_09d_n.png" />
+	  <None Remove="Resources\Images\icon_04n.png" />
+	  <None Remove="Resources\Images\icon_04n_n.png" />
+	  <None Remove="Resources\Images\icon_04d.png" />
+	  <None Remove="Resources\Images\icon_04d_n.png" />
+	  <None Remove="Resources\Images\icon_03n.png" />
+	  <None Remove="Resources\Images\icon_03n_n.png" />
+	  <None Remove="Resources\Images\icon_03d.png" />
+	  <None Remove="Resources\Images\icon_03d_n.png" />
+	  <None Remove="Resources\Images\icon_02n.png" />
+	  <None Remove="Resources\Images\icon_02n_n.png" />
+	  <None Remove="Resources\Images\icon_02d.png" />
+	  <None Remove="Resources\Images\icon_02d_n.png" />
+	  <None Remove="Resources\Images\icon_01n.png" />
+	  <None Remove="Resources\Images\icon_01n_n.png" />
+	  <None Remove="Resources\Images\icon_01d.png" />
+	  <None Remove="Resources\Images\icon_01d_n.png" />
+	  <None Remove="Resources\Images\icon_50n_n.png" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />
 	  <Folder Include="Views\" />
 	  <Folder Include="Dialogs\" />
 	  <Folder Include="Modules\" />
+	  <Folder Include="CustomControls\" />
+	  <Folder Include="Resources\Fonts\" />
+	</ItemGroup>
+	<ItemGroup>
+	  <MauiFont Include="Resources\Fonts\NunitoSans-Bold.ttf" />
+	  <MauiFont Include="Resources\Fonts\NunitoSans-ExtraBold.ttf" />
+	  <MauiFont Include="Resources\Fonts\NunitoSans-Regular.ttf" />
+	  <MauiFont Include="Resources\Fonts\NunitoSans.ttf" />
+	  <MauiFont Include="Resources\Fonts\faregular.ttf" />
+	  <MauiFont Include="Resources\Fonts\fasolid.ttf" />
+	  <MauiFont Include="Resources\Fonts\NunitoSans-SemiBold.ttf" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Include="Resources\Images\icon_50n.png" />
+	  <BundleResource Include="Resources\Images\icon_50d.png" />
+	  <BundleResource Include="Resources\Images\icon_50d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_13n.png" />
+	  <BundleResource Include="Resources\Images\icon_13n_n.png" />
+	  <BundleResource Include="Resources\Images\icon_13d.png" />
+	  <BundleResource Include="Resources\Images\icon_13d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_11n.png" />
+	  <BundleResource Include="Resources\Images\icon_11n_n.png" />
+	  <BundleResource Include="Resources\Images\icon_11d.png" />
+	  <BundleResource Include="Resources\Images\icon_11d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_10n.png" />
+	  <BundleResource Include="Resources\Images\icon_10n_n.png" />
+	  <BundleResource Include="Resources\Images\icon_10d.png" />
+	  <BundleResource Include="Resources\Images\icon_10d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_09n.png" />
+	  <BundleResource Include="Resources\Images\icon_09n_n.png" />
+	  <BundleResource Include="Resources\Images\icon_09d.png" />
+	  <BundleResource Include="Resources\Images\icon_09d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_04n.png" />
+	  <BundleResource Include="Resources\Images\icon_04n_n.png" />
+	  <BundleResource Include="Resources\Images\icon_04d.png" />
+	  <BundleResource Include="Resources\Images\icon_04d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_03n.png" />
+	  <BundleResource Include="Resources\Images\icon_03n_n.png" />
+	  <BundleResource Include="Resources\Images\icon_03d.png" />
+	  <BundleResource Include="Resources\Images\icon_03d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_02n.png" />
+	  <BundleResource Include="Resources\Images\icon_02n_n.png" />
+	  <BundleResource Include="Resources\Images\icon_02d.png" />
+	  <BundleResource Include="Resources\Images\icon_02d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_01n.png" />
+	  <BundleResource Include="Resources\Images\icon_01n_n.png" />
+	  <BundleResource Include="Resources\Images\icon_01d.png" />
+	  <BundleResource Include="Resources\Images\icon_01d_n.png" />
+	  <BundleResource Include="Resources\Images\icon_50n_n.png" />
 	</ItemGroup>
 </Project>
