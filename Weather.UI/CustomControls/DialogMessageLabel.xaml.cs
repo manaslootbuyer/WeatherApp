@@ -3,9 +3,9 @@
 namespace Weather.UI.CustomControls;
 
 [ExcludeFromCodeCoverage]
-public partial class DefaultLabel
+public partial class DialogMessageLabel
 {
-	public DefaultLabel()
+	public DialogMessageLabel()
 	{
 		InitializeComponent();
 	}

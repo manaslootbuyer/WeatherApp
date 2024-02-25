@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<views:MainPageXaml xmlns:views="clr-namespace:Weather.UI"
+                     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+                     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                     xmlns:controls="clr-namespace:Weather.UI.CustomControls"
+                     xmlns:vm="clr-namespace:Weather.UI.ViewModels" xmlns:model="clr-namespace:Weather.Domain.Models;assembly=Weather.Domain"
+                     x:Class="Weather.UI.MainPage"
+                     x:DataType="vm:MainViewModel"
+                     BackgroundColor="{StaticResource Primary}">
+    <ScrollView>
+        <VerticalStackLayout Padding="40" Spacing="0">
+            <controls:TitleLabel Text="{Binding City}" />
+            <controls:SubHeaderLabel Text="{Binding CurrentDate,StringFormat='{}{0:dddd, dd MMMM yyyy HH:mm}'}"
+                                      TextColor="{StaticResource Gray100}" />
+            <Grid ColumnDefinitions="*,*" Margin="0,40,0,0">
+                <controls:WeatherImage Grid.Column="0"
+                                        DayCode="{Binding DayCode}"
+                                        WeatherCode="{Binding WeatherCondition}"
+                                        HorizontalOptions="Start"
+                                        VerticalOptions="Center"
+                                        WidthRequest="120"
+                                        HeightRequest="120" />
+                <VerticalStackLayout Grid.Column="1"
+                                     HorizontalOptions="EndAndExpand"
+                                     VerticalOptions="CenterAndExpand">
+                    <controls:TitleLabel HorizontalOptions="End"
+                                         Text="{Binding CurrentTemp,Converter={StaticResource DoubleToTemperatureConverter}}"
+                                         FontSize="{StaticResource LargeFontSize}" />
+                    <controls:DefaultLabel HorizontalOptions="End"
+                                           Text="Feels like 27°c" />
+                    <controls:DefaultLabel Text="Few clouds"
+                                           HorizontalOptions="EndAndExpand" />
+                </VerticalStackLayout>
+            </Grid>
+
+            <controls:HeaderLabel Text="Daily"
+                                  Margin="0, 8, 0, 0"/>
+
+            <StackLayout BindableLayout.ItemsSource="{Binding DailyWeatherList}"
+                         Margin="0,40,0,0"
+                         Spacing="10">
+                <BindableLayout.ItemTemplate>
+                    <DataTemplate x:DataType="model:CurrentWeatherModel">
+                        <Grid>
+                             <Frame Padding="16, 8, 16, 12"
+                                    CornerRadius="24"
+                                    BorderColor="Transparent"
+                                    BackgroundColor="Black"
+                                    Opacity="0.3"/>
+                             <Frame Padding="16, 8, 16, 12"
+                                    CornerRadius="24"
+                                    BorderColor="Transparent"
+                                   BackgroundColor="Transparent">
+                                <Grid ColumnDefinitions="100, *, Auto">
+                                    <controls:DefaultLabel Grid.Column="0"
+                                                          Text="{Binding Time, StringFormat='{0:dddd}'}"
+                                                          Margin="8, 0, 0, 0"
+                                                          HorizontalOptions="Start"
+                                                          VerticalOptions="CenterAndExpand" />
+
+                                    <controls:WeatherImage Grid.Column="1"
+                                                        DayCode="{Binding IsDay}"
+                                                        WeatherCode="{Binding Weathercode}"
+                                                        WidthRequest="36"
+                                                        HeightRequest="36"
+                                                        HorizontalOptions="Center"
+                                                        VerticalOptions="Center" />
+
+                                    <controls:DefaultLabel Grid.Column="2"
+                                                        Text="{Binding Temperature,Converter={StaticResource DoubleToTemperatureConverter}}"
+                                                        Margin="8, 0, 0, 0"
+                                                        HorizontalOptions="End"
+                                                        VerticalOptions="CenterAndExpand" />
+
+                                </Grid>
+                            </Frame>
+
+
+                        </Grid>
+                       
+                    </DataTemplate>
+                </BindableLayout.ItemTemplate>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+</views:MainPageXaml>

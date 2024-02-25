@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<?xaml-comp compile="true" ?>
+<ResourceDictionary 
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:commonResources="clr-namespace:Weather.Common.Resources;assembly=Weather.Common"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+   <Style x:Key="DialogLabelMessageStyle"
+           TargetType="Label">
+        <Setter Property="FontFamily" Value="{x:Static commonResources:Fonts.RegularFont}" />
+        <Setter Property="TextColor" Value="Black" />
+        <Setter Property="FontSize" Value="{StaticResource HeaderFontSize}" />
+        <Setter Property="VerticalTextAlignment" Value="Center" />
+        <Setter Property="HorizontalTextAlignment" Value="Start" />
+    </Style>
+
+</ResourceDictionary>
+

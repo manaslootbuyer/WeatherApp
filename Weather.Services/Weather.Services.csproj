@@ -8,7 +8,20 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Weather.Domain\Weather.Domain.csproj" />
-    <ProjectReference Include="..\WeatherApp.Common\WeatherApp.Common.csproj" />
     <ProjectReference Include="..\WeatherApp.Common\Weather.Common.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Refit" Version="7.0.0" />
+    <PackageReference Include="Refit.Newtonsoft.Json" Version="7.0.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="RestApi\" />
+    <None Remove="Services\" />
+    <None Remove="Contracts\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="RestApi\" />
+    <Folder Include="Services\" />
+    <Folder Include="Contracts\" />
   </ItemGroup>
 </Project>

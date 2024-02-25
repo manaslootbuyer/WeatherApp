@@ -4,7 +4,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
 
     <x:Double x:Key="TitleFontSize">38</x:Double>
-    <x:Double x:Key="LargeFontSize">68</x:Double>
+    <x:Double x:Key="LargeFontSize">65</x:Double>
     <x:Double x:Key="HeaderFontSize">22</x:Double>
     <x:Double x:Key="SubHeaderFontSize">18</x:Double>
     <x:Double x:Key="DefaultLabelFontSize">16</x:Double>

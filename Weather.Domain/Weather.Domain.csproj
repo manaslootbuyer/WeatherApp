@@ -9,9 +9,15 @@
   <ItemGroup>
     <None Remove="Navigation\" />
     <None Remove="Navigation\Params\" />
+    <None Remove="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Navigation\" />
     <Folder Include="Navigation\Params\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Refit.Newtonsoft.Json" Version="7.0.0" />
+    <PackageReference Include="Refit" Version="7.0.0" />
   </ItemGroup>
 </Project>

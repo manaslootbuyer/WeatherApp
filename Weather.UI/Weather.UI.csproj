@@ -123,6 +123,9 @@
 	  <None Remove="Resources\Images\icon_01d.png" />
 	  <None Remove="Resources\Images\icon_01d_n.png" />
 	  <None Remove="Resources\Images\icon_50n_n.png" />
+	  <None Remove="Converters\" />
+	  <None Remove="Extensions\" />
+	  <None Remove="Enums\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="ViewModels\" />
@@ -131,6 +134,9 @@
 	  <Folder Include="Modules\" />
 	  <Folder Include="CustomControls\" />
 	  <Folder Include="Resources\Fonts\" />
+	  <Folder Include="Converters\" />
+	  <Folder Include="Extensions\" />
+	  <Folder Include="Enums\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <MauiFont Include="Resources\Fonts\NunitoSans-Bold.ttf" />
