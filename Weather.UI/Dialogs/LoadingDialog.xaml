@@ -8,14 +8,19 @@
                              x:DataType="dialogModels:LoadingDialogModel"
                              Color="Transparent"
                              Size="200,100">
-    <Frame Background="{DynamicResource White}"
-           BorderColor="Transparent">
-        <VerticalStackLayout Spacing="20" VerticalOptions="Center">
+    <Border Background="{DynamicResource White}"
+            StrokeShape="RoundRectangle 10,10,10,10"
+            Stroke="Transparent">
+        <VerticalStackLayout Spacing="20"
+                             VerticalOptions="Center">
                 <customControls:DialogMessageLabel Text="{Binding Message}"
                                                    HorizontalTextAlignment="Center"
                                                    VerticalOptions="Center"/>
                 <ActivityIndicator IsRunning="True"
-                                   Color="Black"/>
+                                   IsVisible="True"
+                                   Color="{StaticResource Primary}"
+                                   HorizontalOptions="CenterAndExpand"
+                                   VerticalOptions="CenterAndExpand"/>
         </VerticalStackLayout>
-    </Frame>
+    </Border>
 </dialogs:LoadingDialogXaml>
